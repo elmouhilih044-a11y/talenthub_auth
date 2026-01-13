@@ -1,13 +1,14 @@
 # talenthub_auth
 
-🎯 Présentation du projet
+## Présentation du projet
+
 
 TalentHub Auth est un système d'authentification multi-rôles développé en PHP natif, basé sur une architecture MVC faite maison (sans framework).
-
 Ce projet représente le socle technique de la future plateforme de recrutement TalentHub.
 Son objectif est de fournir une base solide, sécurisée, maintenable et réutilisable pour toutes les futures fonctionnalités (offres d’emploi, candidatures, messagerie, etc.).
 
-🧠 Objectifs pédagogiques
+## Objectifs pédagogiques
+
 
 Implémenter une architecture MVC from scratch
 
@@ -21,7 +22,8 @@ Protéger les routes selon le rôle utilisateur
 
 Comprendre les avantages d’une architecture MVC (maintenabilité, évolutivité)
 
-👥 Rôles du système
+## Rôles du système
+
 
 Le système contient trois rôles :
 
@@ -49,8 +51,10 @@ Accède à : /admin/dashboard
 
 Toutes ses pages sont sous : /admin/*
 
-✨ Fonctionnalités
-🔐 Authentification
+## Fonctionnalités
+
+
+### Authentification
 
 Inscription (Candidat et Recruteur uniquement)
 
@@ -62,7 +66,7 @@ Hashage sécurisé des mots de passe avec password_hash()
 
 Gestion des sessions PHP
 
-🔑 Gestion des rôles
+### Gestion des rôles
 
 Attribution automatique du rôle lors de l’inscription
 
@@ -72,7 +76,8 @@ Redirection automatique après login selon le rôle
 
 Vérification du rôle à chaque accès à une route protégée
 
-🚫 Sécurité
+## Sécurité
+
 
 Requêtes préparées PDO pour éviter les injections SQL
 
@@ -84,7 +89,8 @@ Aucun mot de passe stocké en clair dans la base de données
 
 Vérification de session sur chaque route protégée
 
-📂 Structure du projet
+## Structure du projet
+
 
 Le projet est organisé comme suit :
 
@@ -141,7 +147,8 @@ public/index.php
 
 Aucun fichier dans src n’est accessible directement depuis le navigateur.
 
-🧱 Architecture MVC
+## Architecture MVC
+
 
 Flux d’une requête :
 
@@ -157,7 +164,8 @@ Controller : reçoit les requêtes et appelle les services
 
 View : contient uniquement l’affichage (aucune logique métier)
 
-🗄️ Base de données
+## Base de données
+
 
 Le projet utilise deux tables principales :
 
@@ -183,7 +191,8 @@ Le script de création de la base de données se trouve dans :
 
 sql/schema.sql
 
-📐 UML
+## UML
+
 
 Le projet contient :
 
@@ -193,7 +202,8 @@ Un diagramme de classes
 
 Ces diagrammes décrivent les interactions des utilisateurs avec le système ainsi que la structure des classes principales (User, Role, etc.).
 
-📌 Contraintes respectées
+## Contraintes respectées
+
 
 Architecture MVC sans framework
 
@@ -207,5 +217,7 @@ Protection des routes selon le rôle utilisateur
 
 Un seul point d’entrée : public/index.php
 
-👩‍💻 Auteur
+## Auteur
+
+
 Hajar Elmouhili 
